@@ -22,7 +22,9 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    background-color: var(--corMenu);
+    background-image: url(../files/fundo-desfoque.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--corTexto);
     align-items: center;
 }
@@ -66,8 +68,8 @@ header ul .button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(17, 119, 235);
     color: white;
+    background-color: #56d9f7;
 }
 .menu ul{
     display: none;
