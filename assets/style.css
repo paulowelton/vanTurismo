@@ -279,12 +279,12 @@ main .apresentacao .fundo3{
     width: 30%;
 }
 
+
 .quem-somos{
     font-family: "Poppins",sans-serif;
-    background-image: url(../files/beautiful-water-villas-tropical-maldives-island-sunrise-time.jpg);
+    background-image: url(../files/fundo-desfoque.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     color: white;
     display: flex;
     flex-direction: column;
@@ -292,7 +292,7 @@ main .apresentacao .fundo3{
 }
 .quem-somos h1{
     margin: 10px 0px 0px;
-    font-size: 40px;
+    font-size: 35px;
 }
 .quem-somos div{
     display: flex;
@@ -302,12 +302,13 @@ main .apresentacao .fundo3{
 }
 .quem-somos img{
     border-radius: 50%;
-    width: 200px;
+    width: 150px;
     margin: 0px 40px 30px;
 }
 .quem-somos p{
     font-weight: bold;
     margin-bottom: 30px;
+    font-size: small;
 }
 
 footer{
