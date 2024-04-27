@@ -265,6 +265,7 @@ main .apresentacao .fundo3{
     height: 100%;
     width: 40%;
     margin-right: 1%;
+    border-radius: 10px;
 }
 .galeria .container .img1:hover{
     transform: translateY(-3px); 
@@ -283,9 +284,17 @@ main .apresentacao .fundo3{
 }
 .galeria .container .fotos div img{
     width: 30%;
+    border-radius: 7px;
 }
 .galeria .container .fotos div img:hover{
     transform: translateY(-3px); 
+}
+.galeria .container .fotos .img2{
+    display: flex;
+    
+}
+.galeria .container .fotos .img2 img{
+    width: 97%;
 }
 
 
