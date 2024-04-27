@@ -193,7 +193,7 @@ main .apresentacao .fundo3{
 }
 .praias .container .passeio{
     border-radius: 20px;
-    width: 30%;
+    width: 23%;
     height: 400px;
     margin: 0px 20px 20px;
     display: flex;
@@ -226,12 +226,12 @@ main .apresentacao .fundo3{
     border: none;
     font-weight: bold;
     color: white;
-    background-color: #3efcdb;
+    background-color: var(--corMenu);
     cursor: pointer;
     font-family: "Poppins", sans-serif;
 }
 .passeio button:hover{
-    background-color: #12ad93;
+    background-color: #273271;
     transition: 0.5s;
 }
 
@@ -266,6 +266,9 @@ main .apresentacao .fundo3{
     width: 40%;
     margin-right: 1%;
 }
+.galeria .container .img1:hover{
+    transform: translateY(-3px); 
+}
 .galeria .container .fotos{
     width: 60%;
     display: flex;
@@ -280,6 +283,9 @@ main .apresentacao .fundo3{
 }
 .galeria .container .fotos div img{
     width: 30%;
+}
+.galeria .container .fotos div img:hover{
+    transform: translateY(-3px); 
 }
 
 
