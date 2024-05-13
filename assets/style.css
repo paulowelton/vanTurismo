@@ -126,7 +126,7 @@ main .apresentacao div{
     width: 100%;
 }
 main .apresentacao .fundo1{
-    background-image: url(../files/fundo\ teste\ 1.jpg);
+    background-image: url(../files/fundo\ 1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -137,7 +137,7 @@ main .apresentacao .fundo1{
     background-position: center;
 }
 main .apresentacao .fundo2{
-    background-image: url(../files/fundo2.jpg);
+    background-image: url(../files/fundo\ 2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -148,7 +148,7 @@ main .apresentacao .fundo2{
     color: white;
 }
 main .apresentacao .fundo3{
-    background-image: url(../files/fundo3.jpg);
+    background-image: url(../files/fundo\ 3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
