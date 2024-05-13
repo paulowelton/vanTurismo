@@ -126,7 +126,7 @@ main .apresentacao div{
     width: 100%;
 }
 main .apresentacao .fundo1{
-    background-image: url(../files/fundo1.jpg);
+    background-image: url(../files/fundo\ teste\ 1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
