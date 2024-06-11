@@ -115,11 +115,11 @@ main .apresentacao{
     display: flex;
     transition: 0.5s;
     font-size: 50px;
+    
 }
 main .apresentacao h1{
     animation: teste 1s ease-in-out forwards;
-    width: 70%;
-    
+    width: 90%;
 }
 main .apresentacao div{
     height: 100%;
@@ -225,13 +225,13 @@ main .apresentacao .fundo3{
     border-radius: 10px;
     border: none;
     font-weight: bold;
-    color: white;
+    color: rgb(246, 244, 244);
     background-color: var(--corMenu);
     cursor: pointer;
     font-family: "Poppins", sans-serif;
 }
 .passeio button:hover{
-    background-color: #273271;
+    background-color: #252e62;
     transition: 0.5s;
 }
 
@@ -267,9 +267,6 @@ main .apresentacao .fundo3{
     margin-right: 1%;
     border-radius: 10px;
 }
-.galeria .container .img1:hover{
-    transform: translateY(-3px); 
-}
 .galeria .container .fotos{
     width: 60%;
     display: flex;
@@ -285,9 +282,6 @@ main .apresentacao .fundo3{
 .galeria .container .fotos div img{
     width: 30%;
     border-radius: 7px;
-}
-.galeria .container .fotos div img:hover{
-    transform: translateY(-3px); 
 }
 .galeria .container .fotos .img2{
     display: flex;
@@ -488,5 +482,13 @@ footer li img{
 
 @font-face {
     font-family: font;
-    src: url('../files/BalooBhaina-Regular.ttf');
+    src: url('../files/Rubik/Rubik-Bold.ttf');
+  }
+@font-face {
+    font-family: font2;
+    src: url('../files/Rubik/Rubik-Bold.ttf');
+  }
+@font-face {
+    font-family: font3;
+    src: url('../files/Rubik/Rubik-Bold.ttf');
   }

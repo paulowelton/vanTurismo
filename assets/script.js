@@ -10,25 +10,6 @@ let radio3 = document.querySelector("#radio3")
 
 radio1.checked = true
 
-// setInterval(() => {
-//     if(radio1.checked == true){
-//         apr.style.marginLeft = "-100%"
-//         radio1.checked = false
-//         radio2.checked = true
-//     }
-//     else if(radio2.checked == true){
-//         apr.style.marginLeft = "-200%"
-//         radio2.checked = false
-//         radio3.checked = true
-//     }
-//     else if(radio3.checked == true){
-//         apr.style.marginLeft = "0"
-//         radio3.checked = false
-//         radio1.checked = true
-//     }
-    
-// }, 6000);
-
 let voltar = document.querySelector(".voltar").addEventListener("click",()=>{
     if(radio1.checked == true){
         apr.style.marginLeft = "-200%"
@@ -64,9 +45,9 @@ let ir = document.querySelector(".ir").addEventListener("click",()=>{
         apr.style.marginLeft = "-200%"
         radio2.checked = false
         radio3.checked = true
-        txt3.style.animation = "animation: teste 1s ease-in-out forwards;"
-        txt1.style.animation = "animation: teste 1s ease-in-out forwards;"
-        txt2.style.animation = "animation: teste 1s ease-in-out forwards;"
+        txt3.style.animation = "animation: teste 2s ease-in-out forwards;"
+        txt1.style.animation = "animation: teste 2s ease-in-out forwards;"
+        txt2.style.animation = "animation: teste 2s ease-in-out forwards;"
     }
     else if(radio3.checked == true){
         apr.style.marginLeft = "0"
