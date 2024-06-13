@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jericoacoara</title>
+    <script src="../assets/script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 100px 10px;
+            align-items: center;
+            background-image: url(../files/fundo-desfoque.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 80px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        header ul li {
+            list-style-type: none;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        footer {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            color: white;
+            background-color: rgb(85, 84, 84);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        footer label {
+            font-weight: bold;
+        }
+
+        footer p {
+            font-size: small;
+        }
+
+        footer ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer li img {
+            margin: 30px;
+            width: 25px;
+            cursor: pointer;
+        }
+
+        .container-informacoes{
+            margin: 100px 0px 100px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .container-informacoes .fotos{
+            width: 50%;
+            border: 1px solid black;
+            height: 400px;
+        }
+        .container-informacoes .descricao{
+            width: 30%;
+            border: 1px solid black;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+        .container-informacoes .descricao p{
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <img src="../files/logo-van-tur.png" alt="">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/#praias">Passeios</a></li>
+            <li><a href="/#sobre-nos">Sobre-nós</a></li>
+            <li><a href="/#galeria">Galeria</a></li>
+            <li><a href="/">Contato</a></li>
+        </ul>
+    </header>
+
+    <section class="container-informacoes">
+            <div class="fotos">
+
+            </div>
+            <div class="descricao">
+                <p>Descubra a deslumbrante praia de Jericoacoara, um destino de tirar o fôlego no nordeste brasileiro.
+
+                    Um dos seus pontos turísticos é a Pedra Furada, uma formação rochosa esculpida pelas forças da natureza uma maravilha natural. Além disso, tem as lagoas de água doce da região, como a Lagoa do Paraíso e a Lagoa Azul, verdadeiros paraísos com suas águas cristalinas, essas lagoas oferecem o cenário perfeito para relaxar, nadar e se divertir. Para os amantes da natureza, a Duna do Pôr do Sol é um destino imperdível. Localizada no coração de Jericoacoara.
+                   
+                   E não podemos esquecer da Vila de Jericoacoara, repleta de lojas, restaurantes deliciosos e uma vibrante vida noturna, a vila é o ponto de partida ideal para explorar tudo que Jericoacoara tem a oferecer. A praia de Jericoacoara é uma experiência mágica. Com suas paisagens deslumbrantes, pontos turísticos fascinantes e lugares acolhedores, Jericoacoara conquista o coração de todos que a visitam, deixando lembranças inesquecíveis.</p>
+                <div class="reservar">
+                    <button>reservar</button>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <label for="">Van turismo</label>
+        <ul>
+            <li><img onclick="redirect('https://www.facebook.com/VanTurismoCeara')"
+                    src="../files/icons8-facebook-novo-50 - Copia.png" alt=""></li>
+            <li><img onclick="redirect('https://www.instagram.com/van_turismo_ceara/')"
+                    src="../files/icons8-instagram-50 - Copia.png" alt=""></li>
+            <li><img onclick="redirect('https://mail.google.com/mail/u/0/#inbox')"
+                    src="../files/icons8-nova-mensagem-50 - Copia.png" alt=""></li>
+        </ul>
+        <p>Conheça o mundo de forma diferente com Van turismo.</p>
+    </footer>
 </body>
+
 </html>
