@@ -80,10 +80,21 @@
             cursor: pointer;
         }
 
-        .container-informacoes{
-            margin: 100px 0px 100px;
+        .titulo{
             display: flex;
             justify-content: center;
+            align-items: center;
+            margin: 50px 0px 0px;
+        }
+        .titulo h1{
+            font-size: 45px;
+            color: rgb(106, 156, 221);
+        }
+
+        .container-informacoes{
+            margin: 50px 0px 100px;
+            display: flex;
+            justify-content: space-evenly;
         }
         
         .container-informacoes .fotos{
@@ -93,7 +104,6 @@
         }
         .container-informacoes .descricao{
             width: 30%;
-            border: 1px solid black;
             height: 400px;
             display: flex;
             flex-direction: column;
@@ -103,7 +113,19 @@
         }
         .container-informacoes .descricao p{
             font-size: 12px;
-            font-weight: bold;
+        }
+        .container-informacoes .descricao button{
+            width: 160px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: rgb(84, 84, 212);
+            color: white;
+            cursor: pointer;
+            
+        }
+        .container-informacoes .descricao button:hover{
+            background-color: rgb(37, 37, 90);
+            transition: 0.7s;
         }
     </style>
 </head>
@@ -119,6 +141,10 @@
             <li><a href="/">Contato</a></li>
         </ul>
     </header>
+
+    <section class="titulo">
+        <h1>Jericoacoara</h1>
+    </section>
 
     <section class="container-informacoes">
             <div class="fotos">
