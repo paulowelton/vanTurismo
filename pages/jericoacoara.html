@@ -5,133 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jericoacoara</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-        * {
-            padding: 0;
-            border: 0;
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 100px 10px;
-            align-items: center;
-            background-image: url(../files/fundo-desfoque.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        header img {
-            border-radius: 50%;
-            width: 80px;
-        }
-
-        header ul {
-            display: flex;
-            justify-content: space-around;
-            width: 50%;
-        }
-
-        header ul li {
-            list-style-type: none;
-        }
-
-        header ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 17px;
-            cursor: pointer;
-        }
-
-        footer {
-            font-family: "Poppins", sans-serif;
-            text-align: center;
-            color: white;
-            background-color: rgb(85, 84, 84);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        footer label {
-            font-weight: bold;
-        }
-
-        footer p {
-            font-size: small;
-        }
-
-        footer ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        footer li img {
-            margin: 30px;
-            width: 25px;
-            cursor: pointer;
-        }
-
-        .titulo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 50px 0px 0px;
-        }
-        .titulo h1{
-            font-size: 45px;
-            color: rgb(106, 156, 221);
-        }
-
-        .container-informacoes{
-            margin: 50px 0px 100px;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-        .container-informacoes .container-fotos{
-            width: 50%;
-            height: auto;
-            border: 1px solid black;
-        }
-        
-        .container-informacoes .descricao{
-            width: 30%;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: space-between;
-        }
-        .container-informacoes .descricao p{
-            font-size: 12px;
-        }
-        .container-informacoes .descricao button{
-            width: 160px;
-            height: 40px;
-            border-radius: 20px;
-            background-color: rgb(84, 84, 212);
-            color: white;
-            cursor: pointer;
-            
-        }
-        .container-informacoes .descricao button:hover{
-            background-color: rgb(37, 37, 90);
-            transition: 0.7s;
-        }
-        
-    </style>
+    <link  rel="icon" type="image/png" href="../files/logo-van-tur.png">
+    <link rel="stylesheet" href="../assets/pages.css">
+    <script src="../assets/pages.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
+    <section onclick="redirect('https://wa.me/5585986061468')" class="wapp"></section>
+
     <header>
         <img src="../files/logo-van-tur.png" alt="">
         <ul>
@@ -148,19 +30,56 @@
     </section>
 
     <section class="container-informacoes">
-            <div class="container-fotos">
-                
-            </div>
-            <div class="descricao">
-                <p>Descubra a deslumbrante praia de Jericoacoara, um destino de tirar o fôlego no nordeste brasileiro.
 
-                    Um dos seus pontos turísticos é a Pedra Furada, uma formação rochosa esculpida pelas forças da natureza uma maravilha natural. Além disso, tem as lagoas de água doce da região, como a Lagoa do Paraíso e a Lagoa Azul, verdadeiros paraísos com suas águas cristalinas, essas lagoas oferecem o cenário perfeito para relaxar, nadar e se divertir. Para os amantes da natureza, a Duna do Pôr do Sol é um destino imperdível. Localizada no coração de Jericoacoara.
-                   
-                   E não podemos esquecer da Vila de Jericoacoara, repleta de lojas, restaurantes deliciosos e uma vibrante vida noturna, a vila é o ponto de partida ideal para explorar tudo que Jericoacoara tem a oferecer. A praia de Jericoacoara é uma experiência mágica. Com suas paisagens deslumbrantes, pontos turísticos fascinantes e lugares acolhedores, Jericoacoara conquista o coração de todos que a visitam, deixando lembranças inesquecíveis.</p>
-                <div class="reservar">
-                    <button>reservar</button>
-                </div>
+        <div class="container-fotos">
+            <div class="setas">
+                <img id="voltar" src="../files/voltar.png" alt="">
+                <img id="ir" src="../files/ir.png" alt="">
             </div>
+            <input type="radio" name="" id="radio1">
+            <input type="radio" name="" id="radio2">
+            <input type="radio" name="" id="radio3">
+            <input type="radio" name="" id="radio4">
+            <input type="radio" name="" id="radio5">
+            <div class="slides">
+
+                <div class="slide">
+                    <img src="../files/fotos jeri/buraco-azul-jericoacoara.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../files/fotos jeri/fontos jeri.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../files/fotos jeri/foto jeri.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../files/fotos jeri/Pedra-Furada-Jericoacoara.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../files/fotos jeri/lagoa do paraiso.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="descricao">
+            <p>Descubra a deslumbrante praia de Jericoacoara, um destino de tirar o fôlego no nordeste brasileiro.
+
+                Um dos seus pontos turísticos é a Pedra Furada, uma formação rochosa esculpida pelas forças da natureza
+                uma maravilha natural. Além disso, tem as lagoas de água doce da região, como a Lagoa do Paraíso e a
+                Lagoa Azul, verdadeiros paraísos com suas águas cristalinas, essas lagoas oferecem o cenário perfeito
+                para relaxar, nadar e se divertir. Para os amantes da natureza, a Duna do Pôr do Sol é um destino
+                imperdível. Localizada no coração de Jericoacoara.
+
+                E não podemos esquecer da Vila de Jericoacoara, repleta de lojas, restaurantes deliciosos e uma vibrante
+                vida noturna, a vila é o ponto de partida ideal para explorar tudo que Jericoacoara tem a oferecer. A
+                praia de Jericoacoara é uma experiência mágica. Com suas paisagens deslumbrantes, pontos turísticos
+                fascinantes e lugares acolhedores, Jericoacoara conquista o coração de todos que a visitam, deixando
+                lembranças inesquecíveis.</p>
+            <div class="reservar">
+                <button id="reservar">reservar</button>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -176,42 +95,6 @@
         <p>Conheça o mundo de forma diferente com Van turismo.</p>
     </footer>
 
-    <script>
-            // let radio1 = document.querySelector("#radio1");
-            // let radio2 = document.querySelector("#radio2");
-            // let radio3 = document.querySelector("#radio3");
-            // let radio4 = document.querySelector("#radio4");
-            // let radio5 = document.querySelector("#radio5");
-            // let fotos = document.querySelector(".fotos");
-            // radio1.checked = true;
-
-            // function trocarFotos() {
-            //     if (radio1.checked) {
-            //         radio1.checked = false;
-            //         radio2.checked = true;
-            //         fotos.style.marginLeft = "-100%"
-            //     } else if (radio2.checked) {
-            //         radio2.checked = false;
-            //         radio3.checked = true;
-            //         fotos.style.marginLeft = "-200%"
-            //     } else if (radio3.checked) {
-            //         radio3.checked = false;
-            //         radio4.checked = true;
-            //         fotos.style.marginLeft = "-300%"
-            //     } else if (radio4.checked) {
-            //         radio4.checked = false;
-            //         radio5.checked = true;
-            //         fotos.style.marginLeft = "-400%"
-            //     } else if (radio5.checked) {
-            //         radio5.checked = false;
-            //         radio1.checked = true;
-            //         fotos.style.marginLeft = "0"
-            //     }
-            // }
-
-            // setInterval(trocarFotos, 3000);
-            
-    </script>
 </body>
 
 </html>
