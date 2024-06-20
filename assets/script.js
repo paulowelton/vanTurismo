@@ -2,6 +2,18 @@ function redirect(url){
     window.location.href = url
 }
 
+function animation(txt1,txt2,txt3){
+    txt1.classList.add('teste');
+    txt2.classList.add('teste');
+    txt3.classList.add('teste');
+    setTimeout(()=>{
+        txt1.classList.remove('teste');
+        txt2.classList.remove('teste');
+        txt3.classList.remove('teste');
+    }, 1000);
+}
+
+
 let apr = document.querySelector(".apresentacao");
 
 let radio1 = document.querySelector("#radio1")
@@ -15,34 +27,44 @@ let voltar = document.querySelector(".voltar").addEventListener("click",()=>{
         apr.style.marginLeft = "-200%"
         radio1.checked = false
         radio3.checked = true
+        animation(txt1,txt2,txt3);
     }
     else if(radio2.checked == true){
         apr.style.marginLeft = "0"
         radio2.checked = false
         radio1.checked = true
+        animation(txt1,txt2,txt3);
     }
     else if(radio3.checked == true){
         apr.style.marginLeft = "-100%"
         radio3.checked = false
         radio2.checked = true
+        animation(txt1,txt2,txt3);
     }
 })
+
+let txt1 = document.querySelector(".txt1")
+let txt2 = document.querySelector(".txt2")
+let txt3 = document.querySelector(".txt3")
 
 let ir = document.querySelector(".ir").addEventListener("click",()=>{
     if(radio1.checked == true){
         apr.style.marginLeft = "-100%"
         radio1.checked = false
         radio2.checked = true
+        animation(txt1,txt2,txt3);
     }
     else if(radio2.checked == true){
         apr.style.marginLeft = "-200%"
         radio2.checked = false
         radio3.checked = true
+        animation(txt1,txt2,txt3);
     }
     else if(radio3.checked == true){
         apr.style.marginLeft = "0"
         radio3.checked = false
         radio1.checked = true
+        animation(txt1,txt2,txt3);
     }
 })
 

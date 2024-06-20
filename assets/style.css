@@ -118,7 +118,6 @@ main .apresentacao{
     
 }
 main .apresentacao h1{
-    animation: teste 1s ease-in-out forwards;
     width: 90%;
 }
 main .apresentacao div{
@@ -216,7 +215,6 @@ main .apresentacao .fundo3{
     font-size: 20px;
     margin: 10px 0px 0px;
     color: var(--corPreco);
-    text-decoration: underline;
 }
 .passeio button{
     margin: 25px 0px 0px;
@@ -467,6 +465,11 @@ footer li img{
     .quem-somos p{
         width: 95%;
     }
+}
+
+.teste{
+    opacity: 0;
+    animation: teste 1s ease forwards;
 }
 
 @keyframes teste {

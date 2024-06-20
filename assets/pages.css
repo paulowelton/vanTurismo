@@ -148,7 +148,7 @@ footer li img {
     background-color: rgb(84, 84, 212);
     color: white;
     cursor: pointer;
-
+    font-size: 15px;
 }
 
 .container-informacoes .descricao button:hover {
